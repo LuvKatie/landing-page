@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    margin: 0px 64px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hero-main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-container * {
+    flex: 1;
+}
+
+/* Every container is spaced evenly ATM ( Footer, Header, Main-Container)
+Need to reduce footer to a smaller size compared to the rest of the flex items
+Main-Container is the biggest and then Header follows */
+
+/* Note for the next time I work on this ^^^ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
