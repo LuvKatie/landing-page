@@ -12,6 +12,7 @@ a {
     color: #E5E7EB;
     font-size: 18px;
     padding: 0px 8px;
+    transition: color .4s;
 }
 
 .logo {
@@ -22,7 +23,7 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: auto;
 }
 
 .header {
@@ -31,27 +32,32 @@ a {
     flex-direction: column;
     flex: auto;
     background-color: #1F2937;
-    padding: 24px 258px 0px;
+    padding: 24px 258px;
+}
+
+.header * {
+    flex-wrap: nowrap;
+    flex-shrink: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 .hero-main {
     display: flex;
-    flex: 1;
+    flex: 1 0 80%;
+    align-items: center;
     justify-content: space-between;
-    padding-bottom: 64px;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .hero-img {
@@ -74,23 +80,60 @@ a {
     color: #F9FAF8;
 }
 
-.hero-btn button {
+.hero-btn input {
     background-color: #3882F6;
     color: white;
+    font-size: 16px;
     font-weight: 800;
+    padding: 2px 12px;
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color .5s;
+}
+
+/* Change background color / color of buttons / inputs / links */
+a:hover {
+    color: plum;
+}
+
+input:hover {
+    background-color: plum;
 }
 
 /* Center piece of page */
 
-.main-container {
+.info {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+    flex: 1 1 0;
 }
 
-.main-container * {
-    flex: 1;
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F3927;
+    padding-top: 24px;
+}
+
+.photo-row {
+    display: flex;
+}
+
+/* Go back to project with flowers and text
+to figure out how to do it here */
+
+.pic {
+    padding: 12px;
+}
+
+.pic img {
+    width: 240px;
+    height: 240px;
 }
 
 /* Bottom of page */
